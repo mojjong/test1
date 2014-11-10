@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body id = 'body1'>
+
+<script>
+function makeFrame(){
+	var iframeObj = document.createElement("iframe");
+	iframeObj.setAttribute("src", "/web/resources/iframe.html");
+	
+	document.getElementById("body1").appendchild(iframeObj);
+}
+</script> 
+
+<h1>Test HTML</h1>
+
+<!-- <form action="" target="zeroframe">
+	<input type="submit"/>
+</form> -->
+
+<button onclick="javascript:makeFrame();">ADD</button>
+
+
+
+</body>
+</html>
